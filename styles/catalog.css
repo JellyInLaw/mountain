@@ -42,6 +42,13 @@
   text-align: center;
 }
 
+.button-catalog {
+  margin-top: 50px;
+  display: block;
+  padding: 16px 33px;
+  border: 1px solid #fcfcfc;
+}
+
 @media (max-width: 768px) {
   .catalog__table {
     width: 630px;
