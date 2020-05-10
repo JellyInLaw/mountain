@@ -1,0 +1,147 @@
+.about .container {
+  padding-right: 0;
+}
+
+.about__title {
+  width: 472px;
+}
+
+.about__block {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__block-text {
+  width: 350px;
+}
+
+.about__block-text_text {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.about__block_map {
+  width: 815px;
+  height: 375px;
+  position: relative;
+  background: url(../img/map.svg) no-repeat center center;
+  background-size: contain;
+}
+
+.about__block_map-point {
+  position: absolute;
+  font-size: 14px;
+}
+
+.about__block_map-point:nth-child(1) {
+  top: 5%;
+  left: 5%;
+}
+
+.about__block_map-point:nth-child(2) {
+  top: 38%;
+  left: 10.7%;
+}
+
+.about__block_map-point:nth-child(3) {
+  top: 57%;
+  left: 18%;
+}
+
+.about__block_map-point:nth-child(4) {
+  top: 81%;
+  left: 22%;
+}
+
+.about__block_map-point:nth-child(5) {
+  top: 16%;
+  left: 43%;
+}
+
+.about__block_map-point:nth-child(6) {
+  top: 20%;
+  left: 56%;
+}
+
+.about__block_map-point:nth-child(7) {
+  top: 36%;
+  left: 71%;
+}
+
+.about__block_map-point:nth-child(8) {
+  top: 56%;
+  left: 55%;
+}
+
+.about__block_map-point::before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  margin-right: 5px;
+  background-color: transparent;
+  border: 5px solid #ec5118;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  transform: rotate(45deg);
+}
+
+@media (max-width: 1024px) {
+  .about .container {
+    padding-right: 68px;
+  }
+
+  .about__title {
+    width: auto;
+    text-align: center;
+  }
+
+  .about__block {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .about__block-text {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  .about__block-text_text {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about .container {
+    padding-right: 48px;
+  }
+
+  .about__block-text_text {
+    max-width: 310px;
+  }
+
+  .about__block_map {
+    width: 672px;
+    height: 315px;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 320px) {
+  .about .container {
+    padding-right: 20px;
+  }
+
+  .about__block-text {
+    flex-wrap: wrap;
+  }
+
+  .about__block_map {
+    display: none;
+  }
+}

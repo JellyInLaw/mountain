@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #061b28;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 115%;
+  color: #061b28;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+p {
+  line-height: 150%;
+  margin-block-start: 0;
+}
+
+.container {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 80px 98px;
+}
+
+.logo {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  padding: 16px;
+  border-radius: 3px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #e6e8ea;
+  border-color: #e6e8ea;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 80px 68px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 80px 48px;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 320px) {
+  h2 {
+    font-size: 34px;
+  }
+
+  .container {
+    padding: 40px 20px;
+  }
+}
