@@ -1,5 +1,5 @@
 //меню в .header для 768px
-let burger = document.querySelector(".header-top__burger");
+const burger = document.querySelector(".header-top__burger");
 let headerTopLogo = document.querySelector(".header-top__logo");
 let headerTopPhone = document.querySelector(".header-top__phone");
 let headerSearchIcon = document.querySelector(".header-top__search-icon");
