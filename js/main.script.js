@@ -39,3 +39,39 @@ $(document).ready(function () {
   });
 });
 //slick
+
+//хахаа ахуительная реализация
+let blogNavItems = document.querySelectorAll(".blog__nav-item");
+let blogContent = document.querySelectorAll(".blog__content");
+
+blogNavItems[0].onclick = function () {
+  blogContent[0].classList.add("is-visible");
+  blogContent[1].classList.remove("is-visible");
+  blogContent[2].classList.remove("is-visible");
+  blogContent[3].classList.remove("is-visible");
+};
+
+blogNavItems[1].onclick = function () {
+  blogContent[1].classList.add("is-visible");
+  blogContent[0].classList.remove("is-visible");
+  blogContent[0].classList.add("hidden");
+  blogContent[2].classList.remove("is-visible");
+  blogContent[3].classList.remove("is-visible");
+};
+
+blogNavItems[2].onclick = function () {
+  blogContent[2].classList.add("is-visible");
+  blogContent[0].classList.remove("is-visible");
+  blogContent[0].classList.add("hidden");
+  blogContent[1].classList.remove("is-visible");
+  blogContent[3].classList.remove("is-visible");
+};
+
+blogNavItems[3].onclick = function () {
+  blogContent[3].classList.add("is-visible");
+  blogContent[1].classList.remove("is-visible");
+  blogContent[2].classList.remove("is-visible");
+  blogContent[0].classList.remove("is-visible");
+  blogContent[0].classList.add("hidden");
+};
+//заебись блять придумал
